@@ -4,10 +4,10 @@
 //  • Hashed build assets (/assets/*): cache-first (immutable by content hash).
 //  • version.json + sw.js: never cached (always network via the fetch bypass).
 //  • Other same-origin GETs: network-first with cache fallback.
-// Cache name carries the build id stamped at build time (mvvby3u324nc), so an
+// Cache name carries the build id stamped at build time (mw4xa8eix72), so an
 // updated worker purges every older cache on activate. skipWaiting +
 // clients.claim make activation immediate; the in-app banner handles the UX.
-const BUILD = "mvvby3u324nc";
+const BUILD = "mw4xa8eix72";
 const CACHE = "dahem-mfg-" + BUILD;
 
 self.addEventListener("install", () => { self.skipWaiting(); });
